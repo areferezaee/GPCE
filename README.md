@@ -293,6 +293,4 @@ If you use this repository or the GPEC method in your research, please cite:
 }
 ```
 
-## License
 
-License information will be added here.
