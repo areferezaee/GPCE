@@ -246,7 +246,7 @@ are avoided.
 Instead, a generic prompt such as:
 
 ```text
-Describe the content. or Describe the content.
+Describe the content. or Describe the process.
 ```
 
 is used so that the generated description is driven primarily by the visual representation.
