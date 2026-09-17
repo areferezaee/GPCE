@@ -191,7 +191,7 @@ chat = EasyDict({
 })
 
 ask(
-    f"<Video><VideoHere></Video> {msg} Describe the video.",
+    f"<Video><VideoHere></Video> {msg} Describe the process.",
     chat
 )
 
