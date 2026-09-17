@@ -288,7 +288,6 @@ If you use this repository or the GPEC method in your research, please cite:
 @article{gpec,
   title   = {GPEC: Efficient Pre-LLM Gaussian Process Embedding Correction for Cardiac Video Caption Generation},
   author  = {Arefeh Rezaei},
-  journal = {Venue},
   year    = {2026}
 }
 ```
