@@ -270,11 +270,18 @@ In the evaluated experimental setting, GPEC introduces less than **0.05 seconds 
 
 ## Data
 
-The experiments use cardiac ultrasound videos together with structured annotations and reference captions.
+The experiments in this project use the **EchoNet-Dynamic** dataset, a publicly available echocardiography video dataset developed for machine learning research in cardiac imaging.
 
-Dataset preparation details, annotation format, data splits, and local data paths will be documented here.
+The dataset contains **10,030 labeled echocardiography videos** with associated expert annotations.
 
-Paths to local or private storage locations are intentionally omitted from the repository.
+* **Dataset:** [EchoNet-Dynamic](https://echonet.github.io/dynamic/)
+* **Dataset Access:** [Stanford AIMI Shared Datasets Portal](https://stanford.redivis.com/datasets/66s1-2hsmzj5rn)
+* **Official Repository:** [echonet/dynamic](https://github.com/echonet/dynamic)
+
+Access to the dataset is subject to the dataset's research use agreement and terms provided by the dataset maintainers.
+
+Local dataset paths are intentionally omitted from this repository.
+
 
 ## Results
 
