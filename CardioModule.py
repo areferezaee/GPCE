@@ -175,7 +175,7 @@ class CardioModule:
       total_loss2 += loss2
       total_loss3 += loss3
       tot = self.n_token*self.div
-      torch.save(self.ERR_Estimator,'checkpoints/cardio_err_estimator.pth')
+      
       return total_loss1/tot, total_loss2/tot, total_loss3/tot
       
 
@@ -247,6 +247,9 @@ class CardioModule:
   
            self.status= 'train'
            loss = self.train(strategy)
+           #if epoch < self.epochs -2 :
+           #  self.save_checkpoint(epoch, path)
+               
            print('TRAIN:loss:', loss)
            self.status= 'val'
            loss1, loss2, loss3 = self.val(strategy)
@@ -267,7 +270,7 @@ if Modulename == '_CardioModule_':
    print('Module is Running...')
    parser = argparse.ArgumentParser(description='Err_Est GP - trainer')
    parser.add_argument('--script-name', default='Err_Est')
-   parser.add_argument('--dataset', type=str, default='ARID')
+   parser.add_argument('--dataset', type=str, default='CPCE')
    parser.add_argument('--optimizer', default='adam')
 
    parser.add_argument('-lr', default=1e-5, type=float, help='learning rate')
@@ -283,7 +286,6 @@ if Modulename == '_CardioModule_':
 
    parser.add_argument('--kernel-function', type=str, default=['LinearKernel', 'LinearKernel', 'LinearKernel', 'LinearKernel', 'LinearKernel', 'LinearKernel'])
    parser.add_argument('--num-inducing-points', type=int, default=11)
-
    parser.add_argument('--outputscale', type=float, default=1., help='output scale')
    parser.add_argument('--eval-every', type=int, default=1, help='num. epochs between test set eval')
    parser.add_argument('--seed', default=42, type=int, help='random seed')
