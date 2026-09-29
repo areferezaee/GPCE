@@ -180,7 +180,7 @@ where `z` is the original projected visual representation, `Δz` is the learned 
 
 ### 4. Caption Generation
 
-The corrected representation is then passed to the llm for caption generation.
+The corrected representation is then passed to the LLm for caption generation.
 
 ```python
 chat = EasyDict({
