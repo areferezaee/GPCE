@@ -44,7 +44,7 @@ Cardiac Ultrasound Video
 ## Repository Structure
 
 ```text
-GPCE/
+GPEC/
 ├── CardioModule.py
 ├── utils.py
 ├── requirements.txt
