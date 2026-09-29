@@ -173,10 +173,10 @@ print(f"Time: {end - start:.6f} seconds")
 The corrected representation is defined as:
 
 ```text
-z_corrected = z + α Δz
+z_corrected = z + Δz
 ```
 
-where `z` is the original projected visual representation, `Δz` is the learned correction, and `α` controls the correction strength.
+where `z` is the original projected visual representation, `Δz` is the learned correction.
 
 ### 4. Caption Generation
 
